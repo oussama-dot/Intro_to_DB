@@ -1,4 +1,4 @@
-CREATE DATABASE alx_book_store;
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 
 CREATE TABLE Books (
@@ -14,8 +14,6 @@ CREATE TABLE Authors(
     author_id INT NOT NULL PRIMARY KEY,
     author_name VARCHAR(215)
 );
-
--- No need to ALTER Books for author_id since included above
 
 CREATE TABLE Customers (
     customer_id INT NOT NULL PRIMARY KEY,
