@@ -10,5 +10,5 @@ try :
   mycursor.execute("CREATE DATABASE alx_book_store")
   print("Database 'alx_book_store' created successfully.")
 
-except mysql.connector.errors.DatabaseError as e :
-    print("the error is ", e)
+except mysql.connector.errors.DatabaseError  :
+    print("can't create alx_book_store Database")
